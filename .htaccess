@@ -1,0 +1,10 @@
+Options -Indexes
+php_flag display_errors Off
+php_flag log_errors On
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^login$ login.php [L]
+RewriteRule ^register$ register.php [L]
+RewriteRule ^logout$ logout.php [L]
